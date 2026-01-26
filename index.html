@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy"
+  content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="dzladev — developer and cyber security portfolio" />
+  <title>dzladev</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="term" aria-label="Terminal landing page">
+      <header class="bar">
+        <div class="dots" aria-hidden="true">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <div class="title">dzladev — choose profile</div>
+
+        <div class="kbd-hint" aria-hidden="true">
+          <kbd>D</kbd> dev · <kbd>S</kbd> security
+        </div>
+      </header>
+
+      <div class="body">
+        <p class="line">
+          <span class="prompt">user</span>@<span class="prompt">dzladev</span>:<span class="path">~</span>$ 
+          <span class="cmd">ls</span>
+        </p>
+
+        <p class="line muted" style="margin-top:-2px;">
+          dev/ &nbsp; security/
+        </p>
+
+        <p class="line" style="margin-top: 16px;">
+          <span class="prompt">user</span>@<span class="prompt">dzladev</span>:<span class="path">~</span>$ 
+          <span class="cmd">cd</span> <span class="muted">[choose]</span>
+        </p>
+
+        <div class="grid" role="list">
+          <a class="card" role="listitem" href="./dev.html" aria-label="Open developer profile">
+            <h2>cd /dev</h2>
+            <p>Software development projects, systems work, and engineering focus.</p>
+            <div class="chiprow" aria-hidden="true">
+              <span class="chip">C#</span>
+              <span class="chip">Python</span>
+              <span class="chip">Node</span>
+              <span class="chip">Systems</span>
+            </div>
+          </a>
+
+          <a class="card" role="listitem" href="./security.html" aria-label="Open cyber security profile">
+            <h2>cd /security</h2>
+            <p>Detection engineering, SOC-style workflows, and applied ML for security.</p>
+            <div class="chiprow" aria-hidden="true">
+              <span class="chip">SOC</span>
+              <span class="chip">Detection</span>
+              <span class="chip">ML</span>
+              <span class="chip">Linux</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="footer">
+          <div>
+            Press <strong>D</strong> or <strong>S</strong>
+          </div>
+        </div>
+
+        <p class="sr-only">
+          Keyboard shortcuts: D for developer, S for security, H for home.
+        </p>
+      </div>
+    </section>
+  </main>
+  <script src="./scripts.js"></script>
+</body>
+</html>
